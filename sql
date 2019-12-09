@@ -60,7 +60,7 @@ GROUP BY
 
 SELECT
  EXTRACT(month from orderdate) as month
- ,round(SUM(total_price)::numeric, 2)
+ ,round(AVG(total_price)::numeric, 2)
 
 
 FROM 
